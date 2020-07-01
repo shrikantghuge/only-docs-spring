@@ -1,4 +1,4 @@
-package in.aos.serviceroviders;
+package in.onlydocs.serviceroviders;
 
 public class ConnectionProvider {
 	

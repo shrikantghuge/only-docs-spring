@@ -223,7 +223,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //Locations -->		
 
 <!-- team -->
-	<div class="team jarallax">
+	<!-- <div class="team jarallax">
 		<div class="container">
 			<h3 class="w3l-head text-center">Team</h3>
 			<div class="w3_services_grids">
@@ -290,7 +290,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 <!-- //team -->
 <!-- testimonials -->
 	<div class="testimonials jarallax" id="testimonials">

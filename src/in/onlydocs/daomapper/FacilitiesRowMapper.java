@@ -1,4 +1,4 @@
-package in.aos.daomapper;
+package in.onlydocs.daomapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

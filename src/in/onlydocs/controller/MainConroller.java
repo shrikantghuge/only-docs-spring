@@ -1,4 +1,4 @@
-package in.aos.controller;
+package in.onlydocs.controller;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import in.aos.bean.GalleryBean;
-import in.aos.service.MainUIService;
-import in.aos.service.MainUIServiceImpl;
+import in.onlydocs.bean.GalleryBean;
+import in.onlydocs.service.MainUIService;
+import in.onlydocs.service.MainUIServiceImpl;
 
 @Controller
 public class MainConroller {

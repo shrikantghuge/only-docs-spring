@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd ">
 
-	<context:component-scan base-package="in.aos.controller" />
+	<context:component-scan base-package="in.onlydocs.controller" />
 
 	<!-- locale specific beans :start -->
 	<mvc:interceptors>
@@ -42,10 +42,10 @@
 	</bean>
 	<!-- locale specific beans :end -->
 	
-	<!-- Register the aos.properties -->
+	<!-- Register the only docs.properties -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ResourceBundleMessageSource">
-		<property name="basename" value="aos" />
+		<property name="basename" value="onlydocs" />
 	</bean>
 	
 	

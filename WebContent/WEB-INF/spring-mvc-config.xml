@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd ">
 
-	<context:component-scan base-package="in.aos.service" />	
+	<context:component-scan base-package="in.onlydocs.service" />	
 	 <context:annotation-config/>
 	 
 	<!-- <bean id="dbPoolDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
@@ -30,7 +30,7 @@
 	   <property name="maxActive" value="10" />
 	</bean> -->
 	
-	<bean id="MainUIDaoBean" class="in.aos.dao.MainUIDaoImpl">
+	<bean id="MainUIDaoBean" class="in.onlydocs.dao.MainUIDaoImpl">
 <!-- 	    <property name="dataSource" ref="dbPoolDataSource"/> -->
 	 </bean>
 

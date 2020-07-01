@@ -1,13 +1,13 @@
-package in.aos.service;
+package in.onlydocs.dao;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import in.aos.bean.Facilities;
-import in.aos.bean.GalleryBean;
-import in.aos.bean.NewsAndEventBean;
+import in.onlydocs.bean.Facilities;
+import in.onlydocs.bean.GalleryBean;
+import in.onlydocs.bean.NewsAndEventBean;
 
-public interface MainUIService {
+public interface MainUIDao {
 	public List<GalleryBean> getSliderImages() throws SQLException;
 	public boolean saveAdmissionEnquiryDetails() throws SQLException;
 	public List<Facilities> getExtraCurricularActivities() throws SQLException;

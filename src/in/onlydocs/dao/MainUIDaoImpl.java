@@ -1,4 +1,4 @@
-package in.aos.dao;
+package in.onlydocs.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,10 +13,10 @@ import org.apache.log4j.Logger;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
-import in.aos.bean.Facilities;
-import in.aos.bean.GalleryBean;
-import in.aos.bean.NewsAndEventBean;
-import in.aos.constants.BPSConstants;
+import in.onlydocs.bean.Facilities;
+import in.onlydocs.bean.GalleryBean;
+import in.onlydocs.bean.NewsAndEventBean;
+import in.onlydocs.constants.BPSConstants;
 
 public class MainUIDaoImpl implements MainUIDao{
 

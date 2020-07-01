@@ -1,4 +1,4 @@
-package in.aos.service;
+package in.onlydocs.service;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import in.aos.bean.Facilities;
-import in.aos.bean.GalleryBean;
-import in.aos.bean.NewsAndEventBean;
-import in.aos.dao.MainUIDao;
-import in.aos.dao.MainUIDaoImpl;
+import in.onlydocs.bean.Facilities;
+import in.onlydocs.bean.GalleryBean;
+import in.onlydocs.bean.NewsAndEventBean;
+import in.onlydocs.dao.MainUIDao;
+import in.onlydocs.dao.MainUIDaoImpl;
 
 public class MainUIServiceImpl implements MainUIService{
 	
