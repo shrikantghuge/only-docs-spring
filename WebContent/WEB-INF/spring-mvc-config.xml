@@ -11,27 +11,39 @@
 	<context:component-scan base-package="in.onlydocs.service" />	
 	 <context:annotation-config/>
 	 
-	<!-- <bean id="dbPoolDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
-	   <property name="url" value="jdbc:mysql://162.222.226.38:3306/bhavaae3_bpsprd" />
+<!-- 	 <bean id="system_config" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:prod.properties</value>
+            </list>
+        </property>
+    </bean> -->
+    
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="locations" value="classpath:prod.properties"/>
+	</bean>
+	 
+	<bean id="dbPoolDataSource" class="in.onlydocs.utils.DBDatasourceProvider" destroy-method="close" >
+	   <property name="url" value="${db.url}" />
 	   <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	   <property name="username" value="bhavaae3_shri" />
-	   <property name="password" value="India$360" />
-	   <property name="removeAbandoned" value="true"/>
+	    <property name="password" value="${db.password}" />
+	   <property name="username" value="${db.user}" />	  
+	   <property name="removeAbandonedOnBorrow" value="true"/>
 	   <property name="initialSize" value="2" />
-	   <property name="maxActive" value="10" />
-	</bean> -->
+	   <property name="maxTotal" value="10" />
+	</bean>
 	<!-- <bean id="dbPoolDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
 	   <property name="url" value="jdbc:mysql://localhost:3306/bps_school" />
 	   <property name="driverClassName" value="com.mysql.jdbc.Driver" />
 	   <property name="username" value="root" />
 	   <property name="password" value="root" />
-	   <property name="removeAbandoned" value="true"/>
+	   <property name="removeAbandonedOnBorrow" value="true"/>
 	   <property name="initialSize" value="2" />
-	   <property name="maxActive" value="10" />
+	   <property name="maxTotal" value="10" />
 	</bean> -->
 	
-	<bean id="MainUIDaoBean" class="in.onlydocs.dao.MainUIDaoImpl">
-<!-- 	    <property name="dataSource" ref="dbPoolDataSource"/> -->
+	<bean id="MainUIDaoBean" class="in.onlydocs.dao.DBDaoDaoImpl">
+	    <property name="dataSource" ref="dbPoolDataSource"/>
 	 </bean>
 
 
