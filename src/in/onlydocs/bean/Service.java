@@ -1,11 +1,31 @@
 package in.onlydocs.bean;
 
+import java.util.List;
+
 public class Service {
 
 	String id;
 	String price;
 	String duration;
 	String name;
+	List<FormFields> formFields;
+	List<Document> documents;
+
+	public List<FormFields> getFormFields() {
+		return formFields;
+	}
+
+	public void setFormFields(List<FormFields> formFields) {
+		this.formFields = formFields;
+	}
+
+	public List<Document> getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(List<Document> documents) {
+		this.documents = documents;
+	}
 
 	public String getId() {
 		return id;
@@ -41,6 +61,8 @@ public class Service {
 
 	@Override
 	public String toString() {
-		return "Service [id=" + id + ", price=" + price + ", duration=" + duration + ", name=" + name + "]";
+		return "Service [id=" + id + ", price=" + price + ", duration=" + duration + ", name=" + name + ", formFields="
+				+ formFields + ", documents=" + documents + "]";
 	}
+
 }

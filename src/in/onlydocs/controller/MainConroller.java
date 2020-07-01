@@ -1,7 +1,5 @@
 package in.onlydocs.controller;
 
-import java.sql.SQLException;
-import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,14 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import in.onlydocs.bean.GalleryBean;
-import in.onlydocs.service.MainUIService;
-import in.onlydocs.service.MainUIServiceImpl;
-
 @Controller
 public class MainConroller {
 	static Logger LOGGER = Logger.getLogger(MainConroller.class);
-	private MainUIService mainUIService = new MainUIServiceImpl();
 	
 	@RequestMapping("/")
 	public String getHomePage(Model model,@RequestParam("language") String language,HttpServletRequest request, HttpServletResponse response){
